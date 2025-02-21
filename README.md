@@ -33,18 +33,25 @@
     <div class="container">
         <h1>Ram Chapke</h1>
         <p>Welcome to my portfolio!</p>
-        <p>I am an Account Executive at Datafortune.</p>
+        <p>Passionate and detail-oriented finance professional with an MBA in Finance, specializing in accounting, taxation, and financial analysis. With hands-on experience in managing financial statements, budgeting, and compliance, I bring expertise in optimizing financial processes and driving business growth. Committed to accuracy and strategic financial planning, I thrive in dynamic environments that require analytical thinking and problem-solving..</p>
+         <h3>Professional Experience</h3>
+         <ul>
+             <li>Datafortune Software Solution</li>
         <h3>Skills</h3>
         <ul>
             <li>Accounting & Finance</li>
-            <li>Programming (Learning)</li>
-            <li>Financial Modeling</li>
-            <li>Guitar & Travelling</li>
+            <li>Financial Modelling</li>
+            <li>Budgeting</li>
+            <li>Financial Management</li>
+            <li>Investment Banking</li>
         </ul>
-        <h3>Projects</h3>
+        <h3>Hobbies</h3>
         <ul>
-            <li><a href="https://github.com/ramchapke/project1">Project 1</a></li>
-            <li><a href="https://github.com/ramchapke/project2">Project 2</a></li>
+            <li>Travelling</li>
+            <li>Programming (Learning)</li>
+            <li>Work on new Technology</li>
+            <li>Reserch on interesting topics</li>
+            <li>Social Activity</li>
         </ul>
         <h3>Contact</h3>
         <p>Email: ramchapke01@gmail.com</p>
