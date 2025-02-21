@@ -13,24 +13,12 @@
     </style>
     <style>
 </style>
-      body {
+body {
     background-color: black;
-    color: white;
+    color: white; /* Set text color to white for visibility */
     font-family: Arial, sans-serif;
-    overflow: hidden;
-}
-
-.stars {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: url('https://i.imgur.com/9WwQeXT.png') repeat;
-    animation: moveStars 50s linear infinite;
-}
-
-@keyframes moveStars {
-    from { background-position: 0 0; }
-    to { background-position: -10000px 5000px; }
+    margin: 0;
+    padding: 0;
 }
     <style>
     /* Page Fade-in Effect */
