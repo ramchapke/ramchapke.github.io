@@ -12,17 +12,14 @@
         a { text-decoration: none; color: blue; }
     </style>
     <style>
+        body {
+    background-color: black;
+    color: white;  /* Ensures text is visible */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
     <style>
-    /* Page Fade-in Effect */
-    body {
-        opacity: 0;
-        animation: fadeIn 1s ease-in forwards;
-    }
-
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
 </style>
 </head>
 <body>
