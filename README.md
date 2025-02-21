@@ -19,7 +19,7 @@
     <div class="container">
         <h1>Ram Chapke</h1>
         <p>Welcome to my portfolio!</p>
-        <p>I am an Account Executive with a passion for coding and technology.</p>
+        <p>I am an Account Executive at Datafortune.</p>
         <h3>Skills</h3>
         <ul>
             <li>Accounting & Finance</li>
