@@ -1,6 +1,9 @@
 <Hello Friends>
 <html lang="en">
 <head>
+<<link rel="stylesheet" href="style.css">
+>
+<script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ram Chapke - Portfolio</title>
