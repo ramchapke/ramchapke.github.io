@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ram Chapke - Portfolio</title>
     <style>
-    body {
+   body {
     background-color: black;
-    color: white; /* Set text color to white for visibility */
+    color: white;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}    
+    overflow: hidden;
+}
+
+.stars {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.imgur.com/9WwQeXT.png') repeat;
+    animation: moveStars 50s linear infinite;
+}
+
+@keyframes moveStars {
+    from { background-position: 0 0; }
+    to { background-position: -10000px 5000px; }
+}
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
         h1 { color: #333; }
