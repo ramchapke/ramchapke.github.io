@@ -14,7 +14,6 @@
 <body>
     <div class="container">
     <img src="profile.jpg" alt="Ram Chapke" width="150" style="border-radius: 50%; display: block; margin: 0 auto;">
-    <h1>Ram Chapke</h1>
     <p>Welcome to my portfolio!</p>
 </div>
     <div class="container">
@@ -26,7 +25,7 @@
             <li>Accounting & Finance</li>
             <li>Programming (Learning)</li>
             <li>Financial Modeling</li>
-            <li>Guitar & Kirtan</li>
+            <li>Guitar & Travelling</li>
         </ul>
         <h3>Projects</h3>
         <ul>
@@ -34,8 +33,8 @@
             <li><a href="https://github.com/ramchapke/project2">Project 2</a></li>
         </ul>
         <h3>Contact</h3>
-        <p>Email: your-email@example.com</p>
-        <p>GitHub: <a href="https://github.com/ramchapke">github.com/ramchapke</a></p>
+        <p>Email: ramchapke01@gmail.com</p>
+        <p>Contact: 9021787284</p>
     </div>
 </body>
 </html>
