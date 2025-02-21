@@ -10,41 +10,7 @@
         .container { max-width: 600px; margin: auto; }
         a { text-decoration: none; color: blue; }
     </style>
-    <body>
-        <div class="bubble-container"></div>
     <style>
-    /* Full-screen bubble container */
-    .bubble-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        overflow: hidden;
-    }
-
-    /* Bubble animation */
-    .bubble {
-        position: absolute;
-        bottom: -100px;
-        width: 20px;
-        height: 20px;
-        background-color: rgba(0, 150, 255, 0.6);
-        border-radius: 50%;
-        animation: rise 5s linear infinite;
-    }
-
-    @keyframes rise {
-        from {
-            transform: translateY(0);
-            opacity: 1;
-        }
-        to {
-            transform: translateY(-100vh);
-            opacity: 0;
-        }
-    }
 </style>
     <style>
     /* Page Fade-in Effect */
