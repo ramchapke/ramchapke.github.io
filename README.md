@@ -11,13 +11,6 @@
         .container { max-width: 600px; margin: auto; }
         a { text-decoration: none; color: blue; }
     </style>
-    body {
-    background-color: black;
-    color: white; /* Set text color to white for visibility */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
     <style>
     <style>
     /* Page Fade-in Effect */
