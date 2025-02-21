@@ -10,6 +10,32 @@
         .container { max-width: 600px; margin: auto; }
         a { text-decoration: none; color: blue; }
     </style>
+    body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #001f3f, #007bff);
+}
+
+.bubbles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bubble {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float 10s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+    50% { opacity: 0.7; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
     <style>
 </style>
     <style>
