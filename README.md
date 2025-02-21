@@ -27,7 +27,7 @@
 </head>
 <body>
     <div class="container">
-   Wallpaper.jpeg
+   https://github.com/ramchapke/ramchapke.github.io/blob/main/Wallpape.jpg
     <p>Welcome to my portfolio!</p>
 </div>
     <div class="container">
