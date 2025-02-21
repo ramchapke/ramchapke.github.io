@@ -10,6 +10,47 @@
         .container { max-width: 600px; margin: auto; }
         a { text-decoration: none; color: blue; }
     </style>
+    :root {
+    --bg-color: #f4f4f4; /* Light background */
+    --text-color: #333;
+    --primary-color: #007bff; /* Blue theme color */
+    --secondary-color: #ffc107; /* Yellow accent */
+    --font: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font);
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Buttons */
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
     <style>
 </style>
     <style>
