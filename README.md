@@ -12,14 +12,6 @@
         a { text-decoration: none; color: blue; }
     </style>
     <style>
-</style>
-body {
-    background-color: black;
-    color: white; /* Set text color to white for visibility */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
     <style>
     /* Page Fade-in Effect */
     body {
@@ -32,6 +24,13 @@ body {
         to { opacity: 1; }
     }
 </style>
+body {
+    background-color: black;
+    color: white; /* Set text color to white for visibility */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 </head>
 <body>
     <div class="container">
