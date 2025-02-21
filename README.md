@@ -12,6 +12,7 @@
     </style>
 </head>
 <body>
+    <img src="profile.jpg" alt="Ram Chapke" width="150" style="border-radius: 50%;">
     <div class="container">
         <h1>Ram Chapke</h1>
         <p>Welcome to my portfolio!</p>
