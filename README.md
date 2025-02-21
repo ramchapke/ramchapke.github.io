@@ -10,6 +10,18 @@
         .container { max-width: 600px; margin: auto; }
         a { text-decoration: none; color: blue; }
     </style>
+    <style>
+    /* Page Fade-in Effect */
+    body {
+        opacity: 0;
+        animation: fadeIn 1s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
 </head>
 <body>
     <div class="container">
