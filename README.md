@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container">
-    <img src="profile.jpg" alt="Ram Chapke" width="150" style="border-radius: 50%; display: block; margin: 0 auto;">
+   <img src="https://raw.githubusercontent.com/ramchapke/ramchapke.github.io/main/profile.jpg" alt="Ram Chapke" width="150" style="border-radius: 50%;">
     <p>Welcome to my portfolio!</p>
 </div>
     <div class="container">
