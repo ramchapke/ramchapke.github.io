@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ram Chapke - Portfolio</title>
     <style>
-   body {
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        h1 { color: #333; }
+        .container { max-width: 600px; margin: auto; }
+        a { text-decoration: none; color: blue; }
+    </style>
+    <style>
+</style>
+      body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
@@ -25,14 +33,6 @@
     to { background-position: -10000px 5000px; }
 }
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-        h1 { color: #333; }
-        .container { max-width: 600px; margin: auto; }
-        a { text-decoration: none; color: blue; }
-    </style>
-    <style>
-</style>
-    <style>
     /* Page Fade-in Effect */
     body {
         opacity: 0;
@@ -46,7 +46,6 @@
 </style>
 </head>
 <body>
-    <div class="stars"></div>
     <div class="container">
    <img src="https://raw.githubusercontent.com/ramchapke/ramchapke.github.io/ee709bd9ab4f185f2610db09505a710409710fcf/Profile.jpg">
     <p>Welcome to my portfolio!</p>
