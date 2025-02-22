@@ -29,57 +29,7 @@
 </style>
 </head>
 <body>
-    <div class="container">
-<img src="images/Profile-removebg.png" alt="My Profile Picture" width="400">
-    <p>Welcome to my portfolio!</p>
-</div>
-    <div class="container">
-        <h1></h1>
-        <p></p>
-        <p><strong>Passionate and detail-oriented finance professional with an MBA in Finance, specializing in accounting, taxation, and financial analysis. With hands-on experience in managing financial statements, budgeting, and compliance, I bring expertise in optimizing financial processes and driving business growth. Committed to accuracy and strategic financial planning, I thrive in dynamic environments that require analytical thinking and problem-solving..</p>
-            <p class="glow-text"><em>Aspiring to become a financial strategist and help businesses achieve financial success.</em></p>
-        <section>
-    <h2 data-aos="fade-up">Professional Experience</h2>
-    
-    <div class="company">
-        <h3>Datafortune Software Solution</h3>
-        <img src="images/datafortune.png" alt="Datafortune Logo" width="150">
-    </div>
-
-     <div class="company">
-        <h3>Sahyadri Hospitals Pvt Ltd.</h3>
-        <img src="images/Sahyadri Logo.png" alt="Sahyadri Logo" width="150">
-    </div>
-
-    <div class="company">
-        <h3>JNP Associates</h3>
-        <img src="images/logo-JNP.png" alt="JNP Associates Logo" width="150">
-    </div>
-</section>
-        <h2 data-aos="fade-left">Skills</h2>
-        <ul>
-            <li>Accounting & Finance</li>
-            <li>Financial Modelling</li>
-            <li>Budgeting</li>
-            <li>Financial Management</li>
-            <li>Investment Banking</li>
-        </ul>
-        <h2 data-aos="fade-right">Hobbies</h2>
-        <ul>
-            <li>Travelling</li>
-            <li>Programming (Learning)</li>
-            <li>Work on new Technology</li>
-            <li>Reserch on interesting topics</li>
-            <li>Social Activity</li>
-        </ul>
-        <h3>Contact</h3>
-        <p>Email: ramchapke01@gmail.com</p>
-        <p>Contact: 9021787284</p>
-    </div>
-    <script>
-    AOS.init();
-</script>
-<canvas id="rainCanvas"></canvas>
+    <canvas id="rainCanvas"></canvas>
 
     <script>
         const canvas = document.getElementById("rainCanvas");
@@ -131,5 +81,55 @@
         createRaindrops();
         drawRain();
     </script>
+    <div class="container">
+<img src="images/Profile-removebg.png" alt="My Profile Picture" width="400">
+    <p>Welcome to my portfolio!</p>
+</div>
+    <div class="container">
+        <h1></h1>
+        <p></p>
+        <p><strong>Passionate and detail-oriented finance professional with an MBA in Finance, specializing in accounting, taxation, and financial analysis. With hands-on experience in managing financial statements, budgeting, and compliance, I bring expertise in optimizing financial processes and driving business growth. Committed to accuracy and strategic financial planning, I thrive in dynamic environments that require analytical thinking and problem-solving..</p>
+            <p class="glow-text"><em>Aspiring to become a financial strategist and help businesses achieve financial success.</em></p>
+        <section>
+    <h2 data-aos="fade-up">Professional Experience</h2>
+    
+    <div class="company">
+        <h3>Datafortune Software Solution</h3>
+        <img src="images/datafortune.png" alt="Datafortune Logo" width="150">
+    </div>
+
+     <div class="company">
+        <h3>Sahyadri Hospitals Pvt Ltd.</h3>
+        <img src="images/Sahyadri Logo.png" alt="Sahyadri Logo" width="150">
+    </div>
+
+    <div class="company">
+        <h3>JNP Associates</h3>
+        <img src="images/logo-JNP.png" alt="JNP Associates Logo" width="150">
+    </div>
+</section>
+        <h2 data-aos="fade-left">Skills</h2>
+        <ul>
+            <li>Accounting & Finance</li>
+            <li>Financial Modelling</li>
+            <li>Budgeting</li>
+            <li>Financial Management</li>
+            <li>Investment Banking</li>
+        </ul>
+        <h2 data-aos="fade-right">Hobbies</h2>
+        <ul>
+            <li>Travelling</li>
+            <li>Programming (Learning)</li>
+            <li>Work on new Technology</li>
+            <li>Reserch on interesting topics</li>
+            <li>Social Activity</li>
+        </ul>
+        <h3>Contact</h3>
+        <p>Email: ramchapke01@gmail.com</p>
+        <p>Contact: 9021787284</p>
+    </div>
+    <script>
+    AOS.init();
+</script>
 </body>
 </html>
