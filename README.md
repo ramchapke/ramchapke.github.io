@@ -9,13 +9,13 @@
 <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ram Chapke - Portfolio</title>
+    <title>Hello I'm Ram- Portfolio</title>
     <style>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
         h1 { color: #333; }
         .container { max-width: 600px; margin: auto; }
-        a { text-decoration: none; color: blue; }
+        a { text-decoration: none; color: Blue; }
     </style>
     <style>
         body {
