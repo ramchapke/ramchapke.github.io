@@ -92,32 +92,4 @@ canvas {
 .show-thank-you {
     opacity: 1;
     transform: translateY(0);
-}
-.profile-container {
-    position: relative;
-    text-align: center;
-    width: 400px;
-    margin: 50px auto;
-}
-.profile-container {
-    position: relative;
-    text-align: center;
-    width: 400px;
-    margin: 50px auto;
-}
-.floating-icons img {
-    width: 50px;
-    position: absolute;
-    animation: float 3s infinite ease-in-out;
-}
-    .money { top: 20px; left: -30px; }
-.stock { top: 50px; right: -40px; }
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-}
-body {
-    background: url('images/white paper.jpg');
-    background-size: cover;
-}
+
