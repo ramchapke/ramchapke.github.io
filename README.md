@@ -126,10 +126,10 @@
             <li>Reserch on interesting topics</li>
             <li>Social Activity</li>
         </ul>
-        <h3>Contact</h3>
+        <h2 data-aos="fade-down">Contact</h2>
         <p>Email: ramchapke01@gmail.com</p>
+        <p>linkedin: https://www.linkedin.com/in/ram-chapke-040734178/</p>
         <p>Contact: 9021787284</p>
-    </div>
      <script>
         const canvas = document.getElementById("rainCanvas");
         const ctx = canvas.getContext("2d");
@@ -183,5 +183,14 @@
     <script>
     AOS.init();
 </script>
-</body>
-</html>
+<div class="thank-you">
+    <h2>✨ Thank You for Visiting! ✨</h2>
+    <p>Hope you liked my portfolio. Let's connect and create something amazing together! 🚀</p>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+            document.querySelector(".thank-you").classList.add("show-thank-you");
+        }, 1000);
+    });
+</script>
