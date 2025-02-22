@@ -40,3 +40,21 @@
     from { text-shadow: 0 0 5px white; }
     to { text-shadow: 0 0 20px white; }
 }
+body {
+    background-color: #1a1a1a; /* Dark background */
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+.raindrop {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background: rgba(173, 216, 230, 0.6);
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
