@@ -35,9 +35,19 @@
         <p>Welcome to my portfolio!</p>
         <p><strong>Passionate and detail-oriented finance professional with an MBA in Finance, specializing in accounting, taxation, and financial analysis. With hands-on experience in managing financial statements, budgeting, and compliance, I bring expertise in optimizing financial processes and driving business growth. Committed to accuracy and strategic financial planning, I thrive in dynamic environments that require analytical thinking and problem-solving..</p>
             <p class="glow-text"><em>Aspiring to become a financial strategist and help businesses achieve financial success.</em></p>
-         <h3>Professional Experience</h3>
-         <ul>
-             <li>Datafortune Software Solution</li>
+        <section>
+    <h2>Professional Experience</h2>
+    
+    <div class="company">
+        <h3>Datafortune</h3>
+        <img src="images/datafortune.png" alt="Datafortune Logo" width="150">
+    </div>
+
+    <div class="company">
+        <h3>JNP Associates</h3>
+        <img src="images/logo-JNP.png" alt="JNP Associates Logo" width="150">
+    </div>
+</section>
         <h3>Skills</h3>
         <ul>
             <li>Accounting & Finance</li>
