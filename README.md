@@ -116,14 +116,13 @@
             <p class="center-text">Budgeting
             <p class="center-text">Financial Planning
             <p class="center-text">Investment Banking
-        </ul>
         <h2 data-aos="fade-right">Hobbies</h2>
         <ul>
-        <p>Travelling</p>
-        <p>Programming (Learning)</p>
-        <p>Work on new Technology</p>
-        <p>Reserch on interesting topics</p>
-        <p>Social Activity</p>
+            <p class="center-text">Travelling
+            <p class="center-text">Programming (Learning)
+            <p class="center-text">Work on new Technology
+            <p class="center-text">Reserch on interesting topics
+            <p class="center-text">Social Activity
         </ul>
         <h2 data-aos="fade-down">Contact</h2>
         <p>Email: ramchapke01@gmail.com</p>
