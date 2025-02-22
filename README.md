@@ -32,11 +32,6 @@
  <canvas id="rainCanvas"></canvas>
    <div class="profile-container">
     <img src="images/Profile-removebg.png" alt="Your Name" class="profile-img">
-    <div class="floating-icons">
-        <img src="images/Accountant.png" class="icon money">
-        <img src="images/Finance.png" class="icon stock">
-        </div>
-</div>
     <p>Welcome to my portfolio!</p>
     <canvas id="rainCanvas"></canvas>
 
