@@ -1,6 +1,9 @@
 <Hello Friends>
 <html lang="en">
 <head>
+<<!-- AOS Library for Scroll Animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>>
 <<link rel="stylesheet" href="style.css">
 >
 <script src="script.js"></script>
@@ -35,7 +38,7 @@
         <p><strong>Passionate and detail-oriented finance professional with an MBA in Finance, specializing in accounting, taxation, and financial analysis. With hands-on experience in managing financial statements, budgeting, and compliance, I bring expertise in optimizing financial processes and driving business growth. Committed to accuracy and strategic financial planning, I thrive in dynamic environments that require analytical thinking and problem-solving..</p>
             <p class="glow-text"><em>Aspiring to become a financial strategist and help businesses achieve financial success.</em></p>
         <section>
-    <h2>Professional Experience</h2>
+    <h2 data-aos="fade-up">Professional Experience</h2>
     
     <div class="company">
         <h3>Datafortune Software Solution</h3>
@@ -52,7 +55,7 @@
         <img src="images/logo-JNP.png" alt="JNP Associates Logo" width="150">
     </div>
 </section>
-        <h3>Skills</h3>
+        <h2 data-aos="fade-left">Skills</h2>
         <ul>
             <li>Accounting & Finance</li>
             <li>Financial Modelling</li>
@@ -60,7 +63,7 @@
             <li>Financial Management</li>
             <li>Investment Banking</li>
         </ul>
-        <h3>Hobbies</h3>
+        <h2 data-aos="fade-right">Hobbies</h2>
         <ul>
             <li>Travelling</li>
             <li>Programming (Learning)</li>
@@ -72,5 +75,8 @@
         <p>Email: ramchapke01@gmail.com</p>
         <p>Contact: 9021787284</p>
     </div>
+    <script>
+    AOS.init();
+</script>
 </body>
 </html>
