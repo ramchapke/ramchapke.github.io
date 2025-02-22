@@ -112,19 +112,19 @@
 </section>
         <h2 data-aos="fade-left">Skills</h2>
         <ul>
-            <li>Accounting & Finance</li>
-            <li>Financial Modelling</li>
-            <li>Budgeting</li>
-            <li>Financial Management</li>
-            <li>Investment Banking</li>
+            <p>Accounting & Finance</p>
+            <p>Financial Modelling</p>
+            <p>Budgeting</p>
+            <p>Financial Management</p>
+            <p>Investment Banking</p>
         </ul>
         <h2 data-aos="fade-right">Hobbies</h2>
         <ul>
-            <li>Travelling</li>
-            <li>Programming (Learning)</li>
-            <li>Work on new Technology</li>
-            <li>Reserch on interesting topics</li>
-            <li>Social Activity</li>
+            <p>Travelling</p>
+            <p>Programming (Learning)</p>
+            <p>Work on new Technology</p>
+            <p>Reserch on interesting topics</p>
+            <p>Social Activity</p>
         </ul>
         <h2 data-aos="fade-down">Contact</h2>
         <p>Email: ramchapke01@gmail.com</p>
