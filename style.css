@@ -64,13 +64,7 @@ canvas {
 }
 .thank-you {
     text-align: center;
-    padding: 50px;
-    color: #fff;
-    background: linear-gradient(45deg, #0057ff, #00d4ff);
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 87, 255, 0.3);
-    margin: 50px auto;
-    width: 60%;
+    margin-top: 50px;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1.5s ease-out, transform 1.5s ease-out;
@@ -84,7 +78,15 @@ canvas {
     font-weight: bold;
     letter-spacing: 5px; /* Adds space between letters */
     text-transform: uppercase;
+    color: black; /* Default black text */
 }
+
+/* Show animation */
+.show-thank-you {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* Show animation */
 .show-thank-you {
