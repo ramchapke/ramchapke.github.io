@@ -86,7 +86,6 @@
         createRaindrops();
         drawRain();
     </script>
-</div>
     <div class="container">
         <h1></h1>
         <p></p>
@@ -120,11 +119,11 @@
         </ul>
         <h2 data-aos="fade-right">Hobbies</h2>
         <ul>
-            <p>Travelling</p>
-            <p>Programming (Learning)</p>
-            <p>Work on new Technology</p>
-            <p>Reserch on interesting topics</p>
-            <p>Social Activity</p>
+        <p>Travelling</p>
+        <p>Programming (Learning)</p>
+        <p>Work on new Technology</p>
+        <p>Reserch on interesting topics</p>
+        <p>Social Activity</p>
         </ul>
         <h2 data-aos="fade-down">Contact</h2>
         <p>Email: ramchapke01@gmail.com</p>
