@@ -30,8 +30,8 @@
 </head>
 <body>
  <canvas id="rainCanvas"></canvas>
-   <div class="profile-container">
-    <img src="images/Profile-removebg.png" alt="Your Name" class="profile-img">
+    <div class="container">
+<img src="images/Profile-removebg.png" alt="My Profile Picture" width="400">
     <p>Welcome to my portfolio!</p>
     <canvas id="rainCanvas"></canvas>
 
