@@ -42,6 +42,11 @@
         <img src="images/datafortune.png" alt="Datafortune Logo" width="150">
     </div>
 
+     <div class="company">
+        <h3>Sahyadri Hospitals Pvt Ltd.</h3>
+        <img src="images/Sahyadri Logo.png" alt="Sahyadri Logo" width="150">
+    </div>
+
     <div class="company">
         <h3>JNP Associates</h3>
         <img src="images/logo-JNP.png" alt="JNP Associates Logo" width="150">
