@@ -181,13 +181,13 @@
     AOS.init();
 </script>
 <div class="thank-you">
-    <h2>✨ Thank You for Visiting! ✨</h2>
-    <p>Hope you liked my portfolio. Let's connect and create something amazing together! 🚀</p>
+    <h2 class="vertical-text">T H A N K &nbsp; Y O U</h2>
+    <p>Looking forward to connecting! 🚀</p>
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             document.querySelector(".thank-you").classList.add("show-thank-you");
-        }, 1000);
+        }, 800);
     });
 </script>
