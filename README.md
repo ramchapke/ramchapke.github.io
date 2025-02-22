@@ -27,7 +27,7 @@
 </head>
 <body>
     <div class="container">
-   <img src="https://raw.githubusercontent.com/ramchapke/ramchapke.github.io/ee709bd9ab4f185f2610db09505a710409710fcf/Profile.jpg">
+   <img src="images/profile(2).jpg" alt="Profile Picture" width="150">
     <p>Welcome to my portfolio!</p>
 </div>
     <div class="container">
