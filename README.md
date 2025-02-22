@@ -29,6 +29,7 @@
 </style>
 </head>
 <body>
+ <canvas id="rainCanvas"></canvas>
     <div class="container">
 <img src="images/Profile-removebg.png" alt="My Profile Picture" width="400">
     <p>Welcome to my portfolio!</p>
@@ -129,6 +130,56 @@
         <p>Email: ramchapke01@gmail.com</p>
         <p>Contact: 9021787284</p>
     </div>
+     <script>
+        const canvas = document.getElementById("rainCanvas");
+        const ctx = canvas.getContext("2d");
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        let raindrops = [];
+
+        function createRaindrops() {
+            for (let i = 0; i < 100; i++) {
+                raindrops.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    length: Math.random() * 15 + 5,
+                    speed: Math.random() * 3 + 2
+                });
+            }
+        }
+
+        function drawRain() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.strokeStyle = "rgba(173, 216, 230, 0.6)";
+            ctx.lineWidth = 2;
+            ctx.lineCap = "round";
+
+            raindrops.forEach((drop) => {
+                ctx.beginPath();
+                ctx.moveTo(drop.x, drop.y);
+                ctx.lineTo(drop.x, drop.y + drop.length);
+                ctx.stroke();
+                drop.y += drop.speed;
+
+                if (drop.y > canvas.height) {
+                    drop.y = 0;
+                    drop.x = Math.random() * canvas.width;
+                }
+            });
+
+            requestAnimationFrame(drawRain);
+        }
+
+        window.addEventListener("resize", () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        createRaindrops();
+        drawRain();
+    </script>
     <script>
     AOS.init();
 </script>
