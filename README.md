@@ -111,11 +111,11 @@
 </section>
         <h2 data-aos="fade-left">Skills</h2>
         <ul>
-            <p>Accounting & Finance</p>
-            <p>Financial Modelling</p>
-            <p>Budgeting</p>
-            <p>Financial Management</p>
-            <p>Investment Banking</p>
+            <p class="center-text">Accounting
+            <p class="center-text">Financial Modelling
+            <p class="center-text">Budgeting
+            <p class="center-text">Financial Planning
+            <p class="center-text">Investment Banking
         </ul>
         <h2 data-aos="fade-right">Hobbies</h2>
         <ul>
