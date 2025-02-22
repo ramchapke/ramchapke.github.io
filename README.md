@@ -28,18 +28,6 @@
     <style>
 </style>
 </head>
-<<script>
-    function createRain() {
-        for (let i = 0; i < 100; i++) { // Number of raindrops
-            let drop = document.createElement("div");
-            drop.classList.add("raindrop");
-            drop.style.left = Math.random() * window.innerWidth + "px";
-            drop.style.animationDuration = (Math.random() * 2 + 2) + "s"; // Speed variation
-            document.body.appendChild(drop);
-        }
-    }
-    createRain();
-</script>>
 <body>
     <div class="container">
 <img src="images/Profile-removebg.png" alt="My Profile Picture" width="400">
