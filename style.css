@@ -64,28 +64,29 @@ canvas {
 }
 .thank-you {
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
     padding: 50px;
     color: #fff;
-    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    background: linear-gradient(45deg, #0057ff, #00d4ff);
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 87, 255, 0.3);
     margin: 50px auto;
     width: 60%;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 1.5s ease, transform 1.5s ease;
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 
-/* Glow Effect */
-.thank-you h2 {
+/* Vertical Text Effect */
+.vertical-text {
+    writing-mode: vertical-rl; /* Rotates text vertically (right to left) */
+    text-orientation: upright; /* Keeps letters upright */
     font-size: 30px;
-    color: #fff;
-    text-shadow: 0 0 10px #fff, 0 0 20px #ff8a00, 0 0 30px #e52e71;
+    font-weight: bold;
+    letter-spacing: 5px; /* Adds space between letters */
+    text-transform: uppercase;
 }
 
-/* Animation */
+/* Show animation */
 .show-thank-you {
     opacity: 1;
     transform: translateY(0);
