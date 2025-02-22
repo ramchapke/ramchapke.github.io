@@ -87,9 +87,16 @@ canvas {
     transform: translateY(0);
 }
 
-
 /* Show animation */
 .show-thank-you {
     opacity: 1;
     transform: translateY(0);
+.profile-container {
+    position: absolute;
+    right: 50px; /* Adjust as needed */
+    top: 50%; 
+    transform: translateY(-50%); /* Center it vertically */
+    text-align: center;
+    width: 400px; /* Adjust width as needed */
+}
 
