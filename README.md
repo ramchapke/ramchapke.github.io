@@ -88,9 +88,8 @@
     </script>
     <div class="container">
         <h1></h1>
-        <p></p>
+        <p class="glow-text"><em>Aspiring to become a financial strategist and help businesses achieve financial success.</em></p>
         <p><strong>Passionate and detail-oriented finance professional with an MBA in Finance, specializing in accounting, taxation, and financial analysis. With hands-on experience in managing financial statements, budgeting, and compliance, I bring expertise in optimizing financial processes and driving business growth. Committed to accuracy and strategic financial planning, I thrive in dynamic environments that require analytical thinking and problem-solving..</p>
-            <p class="glow-text"><em>Aspiring to become a financial strategist and help businesses achieve financial success.</em></p>
         <section>
     <h2 data-aos="fade-up">Professional Experience</h2>
     
