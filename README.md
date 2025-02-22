@@ -182,7 +182,6 @@
 </script>
 <div class="thank-you">
     <h2 class="vertical-text">T H A N K &nbsp; Y O U</h2>
-    <p>Looking forward to connecting! 🚀</p>
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -191,3 +190,4 @@
         }, 800);
     });
 </script>
+
