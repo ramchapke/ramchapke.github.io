@@ -30,7 +30,7 @@
 </head>
 <body>
     <div class="container">
-<img src="images/Profile-removebg.png" alt="My Profile Picture" width="150">
+<img src="images/Profile-removebg.png" alt="My Profile Picture" width="400">
     <p>Welcome to my portfolio!</p>
 </div>
     <div class="container">
