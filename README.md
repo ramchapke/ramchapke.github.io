@@ -30,15 +30,15 @@
 <img src="https://raw.githubusercontent.com/ramchapke/ramchapke.github.io/ee709bd9ab4f185f2610db09505a710409710fcf/Profile.jpg">    <p>Welcome to my portfolio!</p>
 </div>
     <div class="container">
-        <h1>Ram Chapke</h1>
-        <p>Welcome to my portfolio!</p>
+        <h1></h1>
+        <p></p>
         <p><strong>Passionate and detail-oriented finance professional with an MBA in Finance, specializing in accounting, taxation, and financial analysis. With hands-on experience in managing financial statements, budgeting, and compliance, I bring expertise in optimizing financial processes and driving business growth. Committed to accuracy and strategic financial planning, I thrive in dynamic environments that require analytical thinking and problem-solving..</p>
             <p class="glow-text"><em>Aspiring to become a financial strategist and help businesses achieve financial success.</em></p>
         <section>
     <h2>Professional Experience</h2>
     
     <div class="company">
-        <h3>Datafortune</h3>
+        <h3>Datafortune Software Solution</h3>
         <img src="images/datafortune.png" alt="Datafortune Logo" width="150">
     </div>
 
