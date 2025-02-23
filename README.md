@@ -31,7 +31,7 @@
 <body>
  <canvas id="rainCanvas"></canvas>
     <div class="container">
-<img src="images/Profile-removebg.png" alt="My Profile Picture" width="400">
+<img src="images/final image.png" alt="My Profile Picture" width="400">
     <p>Welcome to my portfolio!</p>
     <canvas id="rainCanvas"></canvas>
 
