@@ -1,4 +1,4 @@
-<Hello Friends>
+
 <html lang="en">
 <head>
 <<!-- AOS Library for Scroll Animations -->
