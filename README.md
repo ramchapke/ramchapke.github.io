@@ -31,7 +31,7 @@
 <body>
  <canvas id="rainCanvas"></canvas>
     <div class="container">
-<img src="images/final image.png" alt="My Profile Picture" width="400">
+<img src="images/final image.png" alt="My Profile Picture" class="profile-pic">
     <p>Welcome to my portfolio!</p>
     <canvas id="rainCanvas"></canvas>
 
@@ -86,7 +86,7 @@
         drawRain();
     </script>
         <h1></h1>
-        <p class="glow-text"><em>Aspiring to become a financial strategist and help businesses achieve financial success.</em></p>
+        <p class="glow-text"><em>“In the symphony of financial excellence, the best accountants are the conductors of prosperity.”</em></p>
         <div class="container">
         <h1></h1>
         <p><strong>Passionate and detail-oriented finance professional with an MBA in Finance, specializing in accounting, taxation, and financial analysis. With hands-on experience in managing financial statements, budgeting, and compliance, I bring expertise in optimizing financial processes and driving business growth. Committed to accuracy and strategic financial planning, I thrive in dynamic environments that require analytical thinking and problem-solving..</p>
