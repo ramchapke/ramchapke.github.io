@@ -13,7 +13,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello I'm Ram - Portfolio</title>
+    <title></title>
 
     <style>
         body {
@@ -28,7 +28,6 @@
         a { text-decoration: none; color: black; }
     </style>
 </head>
-
 <body>
     <canvas id="rainCanvas"></canvas>
 
