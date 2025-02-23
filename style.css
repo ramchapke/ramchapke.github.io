@@ -99,4 +99,12 @@ canvas {
     text-align: center;
     width: 400px; /* Adjust width as needed */
 }
+.profile-pic {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; /* If you want a circular image */
+}
 
