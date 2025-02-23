@@ -38,8 +38,8 @@
 
         <p class="glow-text"><em>“In the symphony of financial excellence, the best accountants are the conductors of prosperity.”</em></p>
          <p><strong>Passionate and detail-oriented finance professional with an MBA in Finance, specializing in accounting, taxation, and financial analysis.</strong>  
-    With hands-on experience in managing financial statements, budgeting, and compliance, I bring expertise in optimizing financial processes and driving business growth.  
-    Committed to accuracy and strategic financial planning, I thrive in dynamic environments that require analytical thinking and problem-solving.</p>
+    <strong>With hands-on experience in managing financial statements, budgeting, and compliance, I bring expertise in optimizing financial processes and driving business growth.  
+    Committed to accuracy and strategic financial planning, I thrive in dynamic environments that require analytical thinking and problem-solving.<strong></p>
 
         <h2 data-aos="fade-up">Professional Experience</h2>
         
