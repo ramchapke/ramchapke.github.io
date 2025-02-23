@@ -25,7 +25,7 @@
         }
         h1 { color: #333; }
         .container { max-width: 600px; margin: auto; }
-        a { text-decoration: none; color: blue; }
+        a { text-decoration: none; color: black; }
     </style>
 </head>
 
