@@ -180,14 +180,5 @@
     <script>
     AOS.init();
 </script>
-<div class="thank-you">
-    <h2 class="vertical-text">T H A N K &nbsp; Y O U</h2>
-</div>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(() => {
-            document.querySelector(".thank-you").classList.add("show-thank-you");
-        }, 800);
-    });
 </script>
 
