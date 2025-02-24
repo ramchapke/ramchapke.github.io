@@ -107,4 +107,47 @@ canvas {
     margin: 0 auto;
     border-radius: 50%; /* If you want a circular image */
 }
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e2e, #3a3a5a);
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animated Frame */
+.frame {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Frame Hover Effect */
+.frame:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
