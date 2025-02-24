@@ -1,4 +1,4 @@
-<>
+
 <html lang="en">
 <head>
     <!-- AOS Library for Scroll Animations -->
@@ -25,7 +25,7 @@
         }
         h1 { color: #333; }
         .container { max-width: 600px; margin: auto; }
-        a { text-decoration: none; color: black; }
+        a { text-decoration: none; color: White; }
     </style>
 </head>
 <body>
@@ -38,7 +38,7 @@
         <p class="glow-text"><em>“In the symphony of financial excellence, the best accountants are the conductors of prosperity.”</em></p>
          <p><strong>Passionate and detail-oriented finance professional with an MBA in Finance, specializing in accounting, taxation, and financial analysis.</strong>  
     <strong>With hands-on experience in managing financial statements, budgeting, and compliance, I bring expertise in optimizing financial processes and driving business growth.  
-    Committed to accuracy and strategic financial planning, I thrive in dynamic environments that require analytical thinking and problem-solving.<strong></p>
+    Committed to accuracy and strategic financial planning, I thrive in dynamic environments that require analytical thinking and problem-solving.<strong>
 
         <h2 data-aos="fade-up">Professional Experience</h2>
         
