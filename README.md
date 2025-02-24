@@ -57,6 +57,7 @@
     <canvas id="rainCanvas"></canvas>
     <div class="container">
         <img src="images/final image.png" alt="My Profile Picture" class="profile-pic">
+         <div class="frame">
         <p>Welcome to my portfolio!</p>
         <p class="glow-text"><em>“In the symphony of financial excellence, the best accountants are the conductors of prosperity.”</em></p>
            <p><strong>Passionate and detail-oriented finance professional with an MBA in Finance, specializing in accounting, taxation, and financial analysis.</strong>  
@@ -141,5 +142,6 @@
         AOS.init();
     </script>
            <p>Thank you for visiting my portfolio!</p>
+        <script src="script.js"></script>
 </body>
 </html>
