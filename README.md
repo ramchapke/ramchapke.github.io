@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<>
 <html lang="en">
 <head>
     <!-- AOS Library for Scroll Animations -->
