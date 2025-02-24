@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -18,11 +17,11 @@
         h1 { color: white; }
         .container { max-width: 600px; margin: auto; }
         .profile-pic {
-            display: block;
-            margin: 20px auto;
-            max-width: 200px;
-            border-radius: 50%;
-        }
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
         .company {
             text-align: center;
             margin: 20px 0;
