@@ -140,8 +140,7 @@
     </script>
     <script>
         AOS.init();
-    </script>
+    
            <p>Thank you for visiting my portfolio!</p>
         <script src="script.js"></script>
-</body>
-</html>
+
