@@ -29,3 +29,10 @@ document.addEventListener("mousemove", function (e) {
         star.remove();
     }, 1000); // Removes the star after 1 second
 });
+document.addEventListener("DOMContentLoaded", function() {
+    const frame = document.querySelector(".frame");
+
+    setInterval(() => {
+        frame.style.boxShadow = `0 0 20px rgba(255, 255, 255, ${Math.random() * 0.5 + 0.3})`;
+    }, 1000);
+});
