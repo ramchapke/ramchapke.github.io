@@ -16,93 +16,131 @@
         }
         h1 { color: white; }
         .container { max-width: 600px; margin: auto; }
-        .profile-container {
-            position: relative;
-            display: inline-block;
-        }
         .profile-pic {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+        .company {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .company img {
             display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
-            position: relative;
-            z-index: 2;
+            margin: auto;
         }
-        .flower {
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            background: radial-gradient(circle, red, orange, yellow);
-            border-radius: 50%;
-            filter: blur(5px);
-            animation: float 4s infinite ease-in-out alternate;
+        .grid-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
         }
-        .flower:nth-child(1) { top: -30px; left: 50%; transform: translateX(-50%); animation-delay: 0s; }
-        .flower:nth-child(2) { top: 50%; left: -30px; transform: translateY(-50%); animation-delay: 1s; }
-        .flower:nth-child(3) { top: 50%; right: -30px; transform: translateY(-50%); animation-delay: 2s; }
-        .flower:nth-child(4) { bottom: -30px; left: 50%; transform: translateX(-50%); animation-delay: 3s; }
-        
-        @keyframes float {
-            0% { transform: scale(1) translateY(0); opacity: 0.7; }
-            100% { transform: scale(1.2) translateY(-10px); opacity: 1; }
+        .grid-list li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 15px;
+            border-radius: 8px;
+        }
+        #rainCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
         }
     </style>
 </head>
 <body>
     <canvas id="rainCanvas"></canvas>
     <div class="container">
-        <div class="profile-container">
-            <img src="images/final image.png" alt="My Profile Picture" class="profile-pic">
-            <div class="flower"></div>
-            <div class="flower"></div>
-            <div class="flower"></div>
-            <div class="flower"></div>
+        <img src="images/final image.png" alt="My Profile Picture" class="profile-pic">
+         <div class="frame">
+        <p>Welcome to my portfolio!</p>
+        <p class="glow-text"><em>“In the symphony of financial excellence, the best accountants are the conductors of prosperity.”</em></p>
+           <p><strong>Passionate and detail-oriented finance professional with an MBA in Finance, specializing in accounting, taxation, and financial analysis.</strong>  
+    <strong>With hands-on experience in managing financial statements, budgeting, and compliance, I bring expertise in optimizing financial processes and driving business growth.  
+    Committed to accuracy and strategic financial planning, I thrive in dynamic environments that require analytical thinking and problem-solving.<strong>
+        <h2 data-aos="fade-up">Professional Experience</h2>
+        <div class="company">
+            <h3>Datafortune Software Solution</h3>
+            <img src="images/datafortune.png" alt="Datafortune Logo" width="150">
         </div>
-        <script>
-            const canvas = document.getElementById("rainCanvas");
-            const ctx = canvas.getContext("2d");
+        <div class="company">
+            <h3>Sahyadri Hospitals Pvt Ltd.</h3>
+            <img src="images/Sahyadri Logo.png" alt="Sahyadri Logo" width="150">
+        </div>
+        <div class="company">
+            <h3>JNP Associates</h3>
+            <img src="images/logo-JNP.png" alt="JNP Associates Logo" width="150">
+        </div>
+        <h2 data-aos="fade-left">Skills</h2>
+        <ul class="grid-list">
+            <li>Accounting</li>
+            <li>Financial Modelling</li>
+            <li>Budgeting</li>
+            <li>Financial Planning</li>
+            <li>Investment Banking</li>
+        </ul>
+        <h2 data-aos="fade-right">Hobbies</h2>
+        <ul class="grid-list">
+            <li>Travelling</li>
+            <li>Programming (Learning)</li>
+            <li>Working on new Technology</li>
+            <li>Researching interesting topics</li>
+            <li>Social Activities</li>
+        </ul>
+        <h2 data-aos="fade-down">Contact</h2>
+        <p>Email: ramchapke01@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ram-chapke-040734178/" target="_blank">Ram Chapke</a></p>
+        <p>Contact: 9021787284</p>
+    </div>
+    <script>
+        const canvas = document.getElementById("rainCanvas");
+        const ctx = canvas.getContext("2d");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        let raindrops = [];
+        function createRaindrops() {
+            for (let i = 0; i < 100; i++) {
+                raindrops.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    length: Math.random() * 15 + 5,
+                    speed: Math.random() * 3 + 2
+                });
+            }
+        }
+        function drawRain() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.strokeStyle = "rgba(173, 216, 230, 0.6)";
+            ctx.lineWidth = 2;
+            ctx.lineCap = "round";
+            raindrops.forEach((drop) => {
+                ctx.beginPath();
+                ctx.moveTo(drop.x, drop.y);
+                ctx.lineTo(drop.x, drop.y + drop.length);
+                ctx.stroke();
+                drop.y += drop.speed;
+                if (drop.y > canvas.height) {
+                    drop.y = 0;
+                    drop.x = Math.random() * canvas.width;
+                }
+            });
+            requestAnimationFrame(drawRain);
+        }
+        window.addEventListener("resize", () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
-            let raindrops = [];
-            function createRaindrops() {
-                for (let i = 0; i < 100; i++) {
-                    raindrops.push({
-                        x: Math.random() * canvas.width,
-                        y: Math.random() * canvas.height,
-                        length: Math.random() * 15 + 5,
-                        speed: Math.random() * 3 + 2
-                    });
-                }
-            }
-            function drawRain() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                ctx.strokeStyle = "rgba(173, 216, 230, 0.6)";
-                ctx.lineWidth = 2;
-                ctx.lineCap = "round";
-                raindrops.forEach((drop) => {
-                    ctx.beginPath();
-                    ctx.moveTo(drop.x, drop.y);
-                    ctx.lineTo(drop.x, drop.y + drop.length);
-                    ctx.stroke();
-                    drop.y += drop.speed;
-                    if (drop.y > canvas.height) {
-                        drop.y = 0;
-                        drop.x = Math.random() * canvas.width;
-                    }
-                });
-                requestAnimationFrame(drawRain);
-            }
-            window.addEventListener("resize", () => {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-            });
-            createRaindrops();
-            drawRain();
-        </script>
-        <script>
-            AOS.init();
-        </script>
-    </div>
-</body>
-</html>
+        });
+        createRaindrops();
+        drawRain();
+    </script>
+    <script>
+        AOS.init();
+    </script>
+           <p>Thank you for visiting my portfolio!</p>
+        <script src="script.js"></script>
+ </script>
