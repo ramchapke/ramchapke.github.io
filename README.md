@@ -7,6 +7,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        <script>
+function toggleInfo(id) {
+    const boxes = document.querySelectorAll('.info-box');
+    boxes.forEach(box => box.style.display = 'none'); // hide all
+    document.getElementById(id).style.display = 'block'; // show clicked
+}
+</script>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
