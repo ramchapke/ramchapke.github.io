@@ -141,6 +141,27 @@
     <script>
         AOS.init();
     </script>
+        <h2 data-aos="zoom-in">Accounts & Finance Topics</h2>
+<div>
+    <button onclick="toggleInfo('tds')">TDS</button>
+    <button onclick="toggleInfo('gst')">GST</button>
+    <button onclick="toggleInfo('reconciliation')">Bank Reconciliation</button>
+</div>
+
+<div id="tds" class="info-box">
+    <h3>TDS (Tax Deducted at Source)</h3>
+    <p>TDS is the tax deducted by a payer before making certain payments such as salary, interest, rent, or commission.</p>
+</div>
+
+<div id="gst" class="info-box">
+    <h3>GST (Goods and Services Tax)</h3>
+    <p>GST is a comprehensive indirect tax on the manufacture, sale, and consumption of goods and services in India.</p>
+</div>
+
+<div id="reconciliation" class="info-box">
+    <h3>Bank Reconciliation</h3>
+    <p>It is the process of matching the balances in accounting records to the corresponding bank statement balances.</p>
+</div>
            <p>Thank you for visiting my portfolio!</p>
         <script src="script.js"></script>
  </script>
