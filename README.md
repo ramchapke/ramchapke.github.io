@@ -150,25 +150,113 @@ function toggleInfo(id) {
     </script>
         <h2 data-aos="zoom-in">Accounts & Finance Topics</h2>
 <div>
-    <button onclick="toggleInfo('tds')">TDS</button>
-    <button onclick="toggleInfo('gst')">GST</button>
-    <button onclick="toggleInfo('reconciliation')">Bank Reconciliation</button>
-</div>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Finance Info Toggle</title>
+  <style>
+    body {
+      background-color: #0e0e0e;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
 
-<div id="tds" class="info-box">
+    h2 {
+      color: #f04890;
+      margin-bottom: 30px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    button {
+      background: linear-gradient(145deg, #ff416c, #ff4b2b);
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 40px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px #ff4b2b80;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff4b2bcc;
+    }
+
+    .info-box {
+      display: none;
+      background: #1a1a1a;
+      border-left: 5px solid #ff416c;
+      border-radius: 10px;
+      margin-top: 20px;
+      padding: 20px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .button-container {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Finance & Tax Topics</h2>
+
+  <div class="button-container">
+    <button onclick="toggleInfo('tds')">💰 TDS</button>
+    <button onclick="toggleInfo('gst')">🧾 GST</button>
+    <button onclick="toggleInfo('reconciliation')">🏦 Bank Reconciliation</button>
+  </div>
+
+  <div id="tds" class="info-box">
     <h3>TDS (Tax Deducted at Source)</h3>
     <p>TDS is the tax deducted by a payer before making certain payments such as salary, interest, rent, or commission.</p>
-</div>
+  </div>
 
-<div id="gst" class="info-box">
+  <div id="gst" class="info-box">
     <h3>GST (Goods and Services Tax)</h3>
     <p>GST is a comprehensive indirect tax on the manufacture, sale, and consumption of goods and services in India.</p>
-</div>
+  </div>
 
-<div id="reconciliation" class="info-box">
+  <div id="reconciliation" class="info-box">
     <h3>Bank Reconciliation</h3>
     <p>It is the process of matching the balances in accounting records to the corresponding bank statement balances.</p>
-</div>
+  </div>
+
+  <script>
+    function toggleInfo(id) {
+      const boxes = document.querySelectorAll('.info-box');
+      boxes.forEach(box => {
+        box.style.display = box.id === id ? 
+          (box.style.display === 'block' ? 'none' : 'block') : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>
+
            <p>Thank you for visiting my portfolio!</p>
         <script src="script.js"></script>
  </script>
