@@ -103,7 +103,7 @@ function toggleInfo(id) {
         <p>Email: ramchapke01@gmail.com</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/ram-chapke-040734178/" target="_blank">Ram Chapke</a></p>
         <p>Contact: 9021787284</p>
-    </div>
+
     <script>
         const canvas = document.getElementById("rainCanvas");
         const ctx = canvas.getContext("2d");
