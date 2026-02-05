@@ -150,7 +150,7 @@ function toggleInfo(id) {
     </script>
         <h2 data-aos="zoom-in">More about the finance</h2>
 <div>
-   <!DOCTYPE html>
+   
 <html lang="en">
 <head>
   <meta charset="UTF-8">
