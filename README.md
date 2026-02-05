@@ -197,8 +197,6 @@ function toggleInfo(id) {
     }
   </script>
 
-</body>
-</html>
 
            <p>Thank you for visiting my portfolio!</p>
         <script src="script.js"></script>
