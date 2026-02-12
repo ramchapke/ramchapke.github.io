@@ -1,103 +1,49 @@
-/* TYPING EFFECT */
-const text = "MBA Finance | Account Executive | Financial Analyst";
-let i = 0;
+/* STAR EFFECT ON SCROLL */
+document.addEventListener("scroll", function () {
+    let star = document.createElement("div");
+    star.classList.add("star");
+    document.body.appendChild(star);
 
-function typeWriter() {
-  if (i < text.length) {
-    document.getElementById("typing").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typeWriter, 50);
-  }
-}
+    let size = Math.random() * 4 + 2; // Random star size
+    star.style.width = size + "px";
+    star.style.height = size + "px";
 
-/* COUNTER ANIMATION */
-function animateCounters() {
-  const counters = document.querySelectorAll('.counter');
+    star.style.left = Math.random() * 100 + "vw"; // Random horizontal position
+    star.style.top = window.scrollY + Math.random() * 50 + "px"; // Appears near scroll position
 
-  counters.forEach(counter => {
-    const target = +counter.getAttribute('data-target');
+    setTimeout(() => {
+        star.remove();
+    }, 2000);
+});
 
-    const update = () => {
-      const count = +counter.innerText;
-      const increment = target / 100;
 
-      if (count < target) {
-        counter.innerText = Math.ceil(count + increment);
-        setTimeout(update, 20);
-      } else {
-        counter.innerText = target;
-      }
-    };
+/* STAR EFFECT ON MOUSE MOVE */
+document.addEventListener("mousemove", function (e) {
+    let star = document.createElement("div");
+    star.classList.add("star");
+    document.body.appendChild(star);
 
-    update();
-  });
-}
+    star.style.left = e.clientX + "px";
+    star.style.top = e.clientY + "px";
 
-/* SCROLL REVEAL */
-function revealOnScroll() {
-  const reveals = document.querySelectorAll(".reveal");
+    let size = Math.random() * 5 + 3; // Random star size
+    star.style.width = size + "px";
+    star.style.height = size + "px";
 
-  reveals.forEach(reveal => {
-    const windowHeight = window.innerHeight;
-    const revealTop = reveal.getBoundingClientRect().top;
+    setTimeout(() => {
+        star.remove();
+    }, 1000); // Removes star after 1 second
+});
 
-    if (revealTop < windowHeight - 100) {
-      reveal.classList.add("active");
+
+/* GLOWING FRAME EFFECT */
+document.addEventListener("DOMContentLoaded", function () {
+    const frame = document.querySelector(".frame");
+
+    if (frame) {
+        setInterval(() => {
+            frame.style.boxShadow =
+                "0 0 20px rgba(255, 255, 255, " + (Math.random() * 0.5 + 0.3) + ")";
+        }, 1000);
     }
-  });
-}
-
-window.addEventListener("scroll", revealOnScroll);
-
-/* FINANCIAL GRAPH */
-const canvas = document.getElementById("graphCanvas");
-
-if (canvas) {
-  const ctx = canvas.getContext("2d");
-
-  function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  }
-
-  resizeCanvas();
-  window.addEventListener("resize", resizeCanvas);
-
-  let points = [];
-
-  for (let i = 0; i < 60; i++) {
-    points.push({
-      x: i * 30,
-      y: Math.random() * canvas.height
-    });
-  }
-
-  function drawGraph() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.beginPath();
-    ctx.strokeStyle = "rgba(220,20,60,0.3)";
-    ctx.lineWidth = 2;
-
-    points.forEach((point, index) => {
-      point.y += (Math.random() - 0.5) * 4;
-
-      if (index === 0) {
-        ctx.moveTo(point.x, point.y);
-      } else {
-        ctx.lineTo(point.x, point.y);
-      }
-    });
-
-    ctx.stroke();
-    requestAnimationFrame(drawGraph);
-  }
-
-  drawGraph();
-}
-
-/* INIT */
-window.onload = function () {
-  typeWriter();
-  animateCounters();
-  revealOnScroll();
-};
+});
