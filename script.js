@@ -29,9 +29,22 @@ function createStar(x, y) {
 }
 
 /* Star on Mouse Move */
+let mouseX = 0;
+let mouseY = 0;
+
 document.addEventListener("mousemove", function (e) {
-    createStar(e.clientX, e.clientY);
+    mouseX = e.clientX;
+    mouseY = e.clientY;
 });
+
+function animateCursor() {
+    cursor.style.left = mouseX + "px";
+    cursor.style.top = mouseY + "px";
+    requestAnimationFrame(animateCursor);
+}
+
+animateCursor();
+
 
 /* Star on Scroll */
 document.addEventListener("scroll", function () {
