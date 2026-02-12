@@ -29,3 +29,18 @@ body {
 
 /* =========================
    PROFILE IMAG
+/* =========================
+   CURSOR GLOW EFFECT
+========================= */
+.cursor-glow {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.08s linear;
+    box-shadow: 0 0 15px white, 0 0 30px white;
+    z-index: 9999;
+}
