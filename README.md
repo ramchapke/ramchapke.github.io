@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Ram Chapke | Finance Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,7 +20,7 @@
 
 <!-- HOME -->
 <section id="home" class="profile reveal">
-  <img src="images/final image.png" class="profile-pic">
+  <img src="images/final image.png" class="profile-pic" alt="Ram Chapke">
   <h1>Ram Chapke</h1>
   <div class="typing" id="typing"></div>
   <a href="resume.pdf" download class="btn">Download Resume</a>
@@ -62,13 +61,4 @@
     <p>Email: ramchapke01@gmail.com</p>
     <p>Phone: 9021787284</p>
     <p>
-      <a href="https://www.linkedin.com/in/ram-chapke-040734178/" target="_blank">
-        LinkedIn Profile
-      </a>
-    </p>
-  </div>
-</section>
-
-<script src="script.js"></script>
-</body>
-</html>
+      <a href="https://www.linkedin.com/in/ram-chapke-040734178/" target
