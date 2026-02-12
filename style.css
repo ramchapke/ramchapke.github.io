@@ -3,7 +3,7 @@
 ========================= */
 .star {
     position: absolute;
-    background: white;
+    background: black;
     border-radius: 50%;
     box-shadow: 0 0 10px white;
     animation: fadeOut 1s linear;
