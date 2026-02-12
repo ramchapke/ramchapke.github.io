@@ -1,6 +1,4 @@
-/* =========================
-   TYPING EFFECT
-========================= */
+/* TYPING EFFECT */
 const text = "MBA Finance | Account Executive | Financial Analyst";
 let i = 0;
 
@@ -12,15 +10,14 @@ function typeWriter() {
   }
 }
 
-/* =========================
-   COUNTER ON SCROLL
-========================= */
+/* COUNTER ANIMATION */
 function animateCounters() {
   const counters = document.querySelectorAll('.counter');
 
   counters.forEach(counter => {
+    const target = +counter.getAttribute('data-target');
+
     const update = () => {
-      const target = +counter.getAttribute('data-target');
       const count = +counter.innerText;
       const increment = target / 100;
 
@@ -31,13 +28,12 @@ function animateCounters() {
         counter.innerText = target;
       }
     };
+
     update();
   });
 }
 
-/* =========================
-   SCROLL REVEAL
-========================= */
+/* SCROLL REVEAL */
 function revealOnScroll() {
   const reveals = document.querySelectorAll(".reveal");
 
@@ -53,55 +49,55 @@ function revealOnScroll() {
 
 window.addEventListener("scroll", revealOnScroll);
 
-/* =========================
-   FINANCIAL GRAPH
-========================= */
+/* FINANCIAL GRAPH */
 const canvas = document.getElementById("graphCanvas");
-const ctx = canvas.getContext("2d");
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+if (canvas) {
+  const ctx = canvas.getContext("2d");
 
-let points = [];
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
 
-for (let i = 0; i < 60; i++) {
-  points.push({
-    x: i * 30,
-    y: Math.random() * canvas.height
-  });
+  resizeCanvas();
+  window.addEventListener("resize", resizeCanvas);
+
+  let points = [];
+
+  for (let i = 0; i < 60; i++) {
+    points.push({
+      x: i * 30,
+      y: Math.random() * canvas.height
+    });
+  }
+
+  function drawGraph() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.beginPath();
+    ctx.strokeStyle = "rgba(220,20,60,0.3)";
+    ctx.lineWidth = 2;
+
+    points.forEach((point, index) => {
+      point.y += (Math.random() - 0.5) * 4;
+
+      if (index === 0) {
+        ctx.moveTo(point.x, point.y);
+      } else {
+        ctx.lineTo(point.x, point.y);
+      }
+    });
+
+    ctx.stroke();
+    requestAnimationFrame(drawGraph);
+  }
+
+  drawGraph();
 }
 
-function drawGraph() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.beginPath();
-  ctx.strokeStyle = "rgba(220,20,60,0.3)";
-  ctx.lineWidth = 2;
-
-  points.forEach((point, index) => {
-    point.y += (Math.random() - 0.5) * 4;
-
-    if (index === 0) {
-      ctx.moveTo(point.x, point.y);
-    } else {
-      ctx.lineTo(point.x, point.y);
-    }
-  });
-
-  ctx.stroke();
-  requestAnimationFrame(drawGraph);
-}
-
-window.addEventListener("resize", () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-});
-
-/* =========================
-   INIT
-========================= */
+/* INIT */
 window.onload = function () {
   typeWriter();
   animateCounters();
-  drawGraph();
   revealOnScroll();
 };
