@@ -1,131 +1,44 @@
-html {
-  scroll-behavior: smooth;
+/* =========================
+   STAR EFFECT
+========================= */
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    animation: fadeOut 1s linear;
+    pointer-events: none;
 }
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0f1b 60%);
-  color: white;
-  overflow-x: hidden;
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
 }
 
-/* NAVBAR */
-nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 15px;
-  background: rgba(0,0,0,0.7);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-}
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: crimson;
-}
-
-/* BACKGROUND CANVAS */
-#graphCanvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  pointer-events: none;
-}
-
-/* SECTIONS */
-section {
-  padding: 120px 10%;
-  min-height: 100vh;
-}
-
-/* PROFILE */
-.profile {
-  text-align: center;
-}
-
-/* GLOWING IMAGE */
-.profile-pic {
-  width: 220px;
-  border-radius: 50%;
-  padding: 6px;
-  background: linear-gradient(45deg, crimson, red, darkred);
-  animation: glow 2s infinite alternate;
+/* =========================
+   GLOW TEXT EFFECT
+========================= */
+.glow-text {
+    font-size: 24px;
+    font-style: italic;
+    color: white;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    animation: glow 2s infinite alternate;
 }
 
 @keyframes glow {
-  0% { box-shadow: 0 0 20px crimson; }
-  100% { box-shadow: 0 0 50px red; }
+    from { text-shadow: 0 0 5px white; }
+    to { text-shadow: 0 0 20px white; }
 }
 
-.typing {
-  font-size: 22px;
-  margin-top: 15px;
-  color: #ccc;
-}
 
-/* BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: crimson;
-  border-radius: 30px;
-  text-decoration: none;
-  color: white;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: white;
-  color: crimson;
-}
-
-/* CARD */
-.card {
-  background: rgba(255,255,255,0.05);
-  padding: 40px;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-}
-
-/* STATS */
-.stat {
-  margin-top: 20px;
-}
-
-.counter {
-  font-size: 40px;
-  font-weight: bold;
-  color: crimson;
-}
-
-/* SCROLL REVEAL */
-.reveal {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: 0.8s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  section { padding: 100px 5%; }
-}
+/* =========================
+   BODY
+========================= */
