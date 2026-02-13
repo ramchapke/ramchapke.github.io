@@ -1,76 +1,105 @@
+/* =========================
+   BODY
+========================= */
 body {
     margin: 0;
-    background: black;
+    background-color: #000;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
-    cursor: none;
+    padding-top: 50px;
+    cursor: none; /* optional - hides default cursor */
 }
 
-/* Container */
-.container {
-    position: relative;
-    z-index: 10;
-    padding-top: 60px;
+
+/* =========================
+   GLASS FRAME
+========================= */
+.frame {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.05);
+    margin: auto;
 }
 
-/* Profile */
-.profile-wrapper {
-    position: relative;
-    display: inline-block;
-}
 
+/* =========================
+   PROFILE IMAGE
+========================= */
 .profile-pic {
-    width: 250px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px; /* Square shape */
-    border: 3px solid white;
-    transition: 0.4s;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 15px;
 }
 
-.profile-pic:hover {
-    transform: scale(1.05);
-}
 
-/* Buttons */
+/* =========================
+   BUTTONS
+========================= */
 button {
     margin: 10px;
-    padding: 10px 20px;
-    background: #111;
+    padding: 10px 15px;
+    background-color: #111;
     color: white;
-    border: 1px solid #555;
+    border: 1px solid #444;
+    border-radius: 6px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button:hover {
-    background: #333;
+    background-color: #333;
 }
 
-/* Info Boxes */
+
+/* =========================
+   INFO BOX
+========================= */
 .info-box {
     display: none;
-    margin: 10px auto;
-    width: 60%;
-    background: rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.08);
     padding: 15px;
+    margin: 10px auto;
+    width: 90%;
+    border-radius: 8px;
+    text-align: left;
 }
 
-/* Rain Canvas */
-#rainCanvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
 
-/* Cursor */
-.cursor {
-    width: 12px;
-    height: 12px;
-    background: red;
+/* =========================
+   STAR EFFECT
+========================= */
+.star {
+    position: absolute;
+    background: white;
     border-radius: 50%;
-    position: fixed;
+    box-shadow: 0 0 8px white;
+    animation: fadeOut 0.8s linear;
     pointer-events: none;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(2); }
+}
+
+
+/* =========================
+   CURSOR GLOW EFFECT
+========================= */
+.cursor-glow {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 15px white, 0 0 30px white;
     z-index: 9999;
 }
