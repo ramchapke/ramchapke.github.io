@@ -1,64 +1,71 @@
-/* Toggle Info Boxes */
-function toggleInfo(id) {
-    let box = document.getElementById(id);
+/* Smooth Cursor */
+const cursor = document.querySelector(".cursor");
 
-    if (box.style.display === "block") {
-        box.style.display = "none";
-    } else {
-        box.style.display = "block";
-    }
-}
+let mouseX = 0, mouseY = 0;
+let currentX = 0, currentY = 0;
 
-/* =========================
-   STAR CREATION
-========================= */
-function createStar(x, y) {
-    let star = document.createElement("div");
-    star.classList.add("star");
-    document.body.appendChild(star);
-
-    let size = Math.random() * 5 + 2;
-    star.style.width = size + "px";
-    star.style.height = size + "px";
-    star.style.left = x + "px";
-    star.style.top = y + "px";
-
-    setTimeout(() => {
-        star.remove();
-    }, 800);
-}
-
-/* Star on Mouse Move */
-let mouseX = 0;
-let mouseY = 0;
-
-document.addEventListener("mousemove", function (e) {
+document.addEventListener("mousemove", (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
 });
 
 function animateCursor() {
-    cursor.style.left = mouseX + "px";
-    cursor.style.top = mouseY + "px";
+    currentX += (mouseX - currentX) * 0.05;
+    currentY += (mouseY - currentY) * 0.05;
+    cursor.style.left = currentX + "px";
+    cursor.style.top = currentY + "px";
     requestAnimationFrame(animateCursor);
 }
-
 animateCursor();
 
+/* Rain Effect */
+const canvas = document.getElementById("rainCanvas");
+const ctx = canvas.getContext("2d");
 
-/* Star on Scroll */
-document.addEventListener("scroll", function () {
-    createStar(Math.random() * window.innerWidth, window.scrollY);
-});
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-/* =========================
-   CURSOR GLOW FOLLOW
-========================= */
-const cursor = document.createElement("div");
-cursor.classList.add("cursor-glow");
-document.body.appendChild(cursor);
+let raindrops = [];
 
-document.addEventListener("mousemove", function (e) {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
-});
+for (let i = 0; i < 120; i++) {
+    raindrops.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        length: Math.random() * 15 + 5,
+        speed: Math.random() * 3 + 2
+    });
+}
+
+function drawRain() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeStyle = "rgba(173, 216, 230, 0.6)";
+    ctx.lineWidth = 2;
+
+    raindrops.forEach(drop => {
+        ctx.beginPath();
+        ctx.moveTo(drop.x, drop.y);
+        ctx.lineTo(drop.x, drop.y + drop.length);
+        ctx.stroke();
+        drop.y += drop.speed;
+
+        if (drop.y > canvas.height) {
+            drop.y = 0;
+            drop.x = Math.random() * canvas.width;
+        }
+    });
+
+    requestAnimationFrame(drawRain);
+}
+drawRain();
+
+/* Toggle Info */
+function toggleInfo(id) {
+    const boxes = document.querySelectorAll('.info-box');
+
+    boxes.forEach(box => {
+        box.style.display =
+            box.id === id
+            ? (box.style.display === 'block' ? 'none' : 'block')
+            : 'none';
+    });
+}
