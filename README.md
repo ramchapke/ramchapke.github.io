@@ -60,7 +60,17 @@ function toggleInfo(id) {
         }
     </style>
 </head>
-<body>
+<<div class="cursor"></div>
+
+<script>
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+});
+</script>
+>
     <canvas id="rainCanvas"></canvas>
     <div class="container">
         <img src="images/final image.png" alt="My Profile Picture" class="profile-pic">
