@@ -99,7 +99,9 @@
 
 <div class="container">
 
+    <div class="profile-wrapper">
     <img src="images/final image.png" class="profile-pic">
+</div>
 
     <h1>Ram Chapke</h1>
     <p><em>“In the symphony of financial excellence, the best accountants are the conductors of prosperity.”</em></p>
