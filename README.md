@@ -14,6 +14,9 @@ function toggleInfo(id) {
     document.getElementById(id).style.display = 'block'; // show clicked
 }
 </script>
+        <div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+        
         body {
             font-family: Arial, sans-serif;
             text-align: center;
