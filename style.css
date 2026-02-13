@@ -40,18 +40,18 @@ body {
 }
 
 .profile-pic {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
+    width: 240px;
+    height: 240px;
     object-fit: cover;
     position: relative;
     z-index: 2;
     border: 4px solid white;
+    border-radius: 10px; /* small smooth corner */
     transition: transform 0.4s ease;
 }
 
 .profile-pic:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 /* Rotating Glow Ring */
