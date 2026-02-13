@@ -1,62 +1,64 @@
-// Toggle Info Boxes
+/* Toggle Info Boxes */
 function toggleInfo(id) {
-    const box = document.getElementById(id);
-    box.style.display = box.style.display === "block" ? "none" : "block";
-}
+    let box = document.getElementById(id);
 
-// Rain Effect
-const canvas = document.getElementById("rainCanvas");
-const ctx = canvas.getContext("2d");
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-let rainDrops = [];
-
-for (let i = 0; i < 150; i++) {
-    rainDrops.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        length: Math.random() * 20,
-        speed: Math.random() * 5 + 2
-    });
-}
-
-function drawRain() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.strokeStyle = "rgba(255,255,255,0.3)";
-    ctx.lineWidth = 1;
-
-    for (let i = 0; i < rainDrops.length; i++) {
-        let drop = rainDrops[i];
-        ctx.beginPath();
-        ctx.moveTo(drop.x, drop.y);
-        ctx.lineTo(drop.x, drop.y + drop.length);
-        ctx.stroke();
-
-        drop.y += drop.speed;
-
-        if (drop.y > canvas.height) {
-            drop.y = 0;
-            drop.x = Math.random() * canvas.width;
-        }
+    if (box.style.display === "block") {
+        box.style.display = "none";
+    } else {
+        box.style.display = "block";
     }
-
-    requestAnimationFrame(drawRain);
 }
 
-drawRain();
+/* =========================
+   STAR CREATION
+========================= */
+function createStar(x, y) {
+    let star = document.createElement("div");
+    star.classList.add("star");
+    document.body.appendChild(star);
 
-// Resize Canvas
-window.addEventListener("resize", function() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    let size = Math.random() * 5 + 2;
+    star.style.width = size + "px";
+    star.style.height = size + "px";
+    star.style.left = x + "px";
+    star.style.top = y + "px";
+
+    setTimeout(() => {
+        star.remove();
+    }, 800);
+}
+
+/* Star on Mouse Move */
+let mouseX = 0;
+let mouseY = 0;
+
+document.addEventListener("mousemove", function (e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
 });
 
-// Custom Cursor
-const cursor = document.querySelector(".cursor");
+function animateCursor() {
+    cursor.style.left = mouseX + "px";
+    cursor.style.top = mouseY + "px";
+    requestAnimationFrame(animateCursor);
+}
 
-document.addEventListener("mousemove", function(e) {
+animateCursor();
+
+
+/* Star on Scroll */
+document.addEventListener("scroll", function () {
+    createStar(Math.random() * window.innerWidth, window.scrollY);
+});
+
+/* =========================
+   CURSOR GLOW FOLLOW
+========================= */
+const cursor = document.createElement("div");
+cursor.classList.add("cursor-glow");
+document.body.appendChild(cursor);
+
+document.addEventListener("mousemove", function (e) {
     cursor.style.left = e.clientX + "px";
     cursor.style.top = e.clientY + "px";
 });
