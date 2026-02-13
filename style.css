@@ -37,6 +37,13 @@ body {
     justify-content: center;
     margin-top: 40px;
 }
+.profile-pic {
+   transition: transform 0.4s ease;
+}
+   
+.profile-pic:hover {
+    transform: scale(1.1) rotate(5deg);
+}
 
 .profile-pic {
     width: 220px;
