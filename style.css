@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding-top: 50px;
-    cursor: default; /* optional - hides default cursor */
+    cursor: none;
 }
 
 
@@ -17,8 +17,8 @@ body {
 ========================= */
 .frame {
     border: 2px solid rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    width: 80%;
+    padding: 30px;
+    width: 90%;
     max-width: 500px;
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
@@ -29,22 +29,20 @@ body {
 
 
 /* =========================
-   PROFILE IMAGE
+   PROFILE WRAPPER
 ========================= */
-.profile-pic {
-   .profile-wrapper {
+.profile-wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
     margin-top: 40px;
 }
-.profile-pic {
-   transition: transform 0.4s ease;
-}
-   
-.profile-pic:hover {
-    transform: scale(1.1) rotate(5deg);
-}
 
+
+/* =========================
+   PROFILE IMAGE
+========================= */
 .profile-pic {
     width: 220px;
     height: 220px;
@@ -53,9 +51,17 @@ body {
     position: relative;
     z-index: 2;
     border: 4px solid white;
+    transition: transform 0.4s ease;
 }
 
-/* Animated Glow Ring */
+.profile-pic:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+
+/* =========================
+   ANIMATED GLOW RING
+========================= */
 .profile-wrapper::before {
     content: "";
     position: absolute;
@@ -65,14 +71,12 @@ body {
     background: linear-gradient(45deg, #ff3c78, #00f7ff);
     z-index: 1;
     animation: rotateGlow 6s linear infinite;
-    filter: blur(20px);
+    filter: blur(25px);
 }
 
 @keyframes rotateGlow {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
-
 }
 
 
@@ -113,42 +117,3 @@ button:hover {
    STAR EFFECT
 ========================= */
 .star {
-    position: absolute;
-    background: white;
-    border-radius: 50%;
-    box-shadow: 0 0 8px white;
-    animation: fadeOut 0.8s linear;
-    pointer-events: none;
-}
-
-@keyframes fadeOut {
-    0% { opacity: 1; transform: scale(1); }
-    100% { opacity: 0; transform: scale(2); }
-}
-
-
-/* Hide default cursor */
-body {
-    cursor: none;
-}
-
-/* Main cursor dot */
-.cursor {
-    position: fixed;
-    width: 12px;
-    height: 12px;
-    background: #ff3c78;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9999;
-    box-shadow: 0 0 15px #ff3c78,
-                0 0 30px #ff3c78;
-    transition: transform 0.1s ease;
-}
-
-/* Cursor scale on hover */
-a:hover ~ .cursor,
-button:hover ~ .cursor {
-    transform: scale(2);
-}
-
