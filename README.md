@@ -16,6 +16,7 @@ function toggleInfo(id) {
 </script>
         <div class="cursor-dot"></div>
 <div class="cursor-outline"></div>
+<script src="script.js"></script>
         
         body {
             font-family: Arial, sans-serif;
