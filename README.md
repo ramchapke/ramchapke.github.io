@@ -72,8 +72,9 @@ document.addEventListener("mousemove", (e) => {
 </script>
 >
     <canvas id="rainCanvas"></canvas>
-    <div class="container">
-        <img src="images/final image.png" alt="My Profile Picture" class="profile-pic">
+    <div class="profile-wrapper">
+    <img src="images/final image.png" class="profile-pic">
+</div>
          <div class="frame">
         <p>Welcome to my portfolio!</p>
         <p class="glow-text"><em>“In the symphony of financial excellence, the best accountants are the conductors of prosperity.”</em></p>
