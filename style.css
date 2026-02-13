@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding-top: 50px;
-    cursor: none; /* optional - hides default cursor */
+    cursor: default; /* optional - hides default cursor */
 }
 
 
@@ -89,17 +89,28 @@ button:hover {
 }
 
 
-/* =========================
-   CURSOR GLOW EFFECT
-========================= */
-.cursor-glow {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: white;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 15px white, 0 0 30px white;
-    z-index: 9999;
+/* Hide default cursor */
+body {
+    cursor: none;
 }
+
+/* Main cursor dot */
+.cursor {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    background: #ff3c78;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    box-shadow: 0 0 15px #ff3c78,
+                0 0 30px #ff3c78;
+    transition: transform 0.1s ease;
+}
+
+/* Cursor scale on hover */
+a:hover ~ .cursor,
+button:hover ~ .cursor {
+    transform: scale(2);
+}
+
