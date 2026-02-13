@@ -37,28 +37,3 @@ document.addEventListener("mousemove", function (e) {
     mouseY = e.clientY;
 });
 
-function animateCursor() {
-    cursor.style.left = mouseX + "px";
-    cursor.style.top = mouseY + "px";
-    requestAnimationFrame(animateCursor);
-}
-
-animateCursor();
-
-
-/* Star on Scroll */
-document.addEventListener("scroll", function () {
-    createStar(Math.random() * window.innerWidth, window.scrollY);
-});
-
-/* =========================
-   CURSOR GLOW FOLLOW
-========================= */
-const cursor = document.createElement("div");
-cursor.classList.add("cursor-glow");
-document.body.appendChild(cursor);
-
-document.addEventListener("mousemove", function (e) {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
-});
