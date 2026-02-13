@@ -36,4 +36,26 @@ document.addEventListener("mousemove", function (e) {
     mouseX = e.clientX;
     mouseY = e.clientY;
 });
+/* =========================
+   CINEMATIC CURSOR JS
+========================= */
+
+const cursorDot = document.querySelector(".cursor-dot");
+const cursorOutline = document.querySelector(".cursor-outline");
+
+let outlineX = 0;
+let outlineY = 0;
+
+document.addEventListener("mousemove", function(e) {
+    cursorDot.style.left = e.clientX + "px";
+    cursorDot.style.top = e.clientY + "px";
+
+    // Smooth follow effect
+    outlineX += (e.clientX - outlineX) * 0.15;
+    outlineY += (e.clientY - outlineY) * 0.15;
+
+    cursorOutline.style.left = outlineX + "px";
+    cursorOutline.style.top = outlineY + "px";
+});
+
 
