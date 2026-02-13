@@ -8,16 +8,12 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding-top: 50px;
-    cursor: default;
+    cursor: none; /* Hide default cursor */
 }
-body {
-   /* =========================
+
+/* =========================
    CINEMATIC WHITE CURSOR
 ========================= */
-
-body {
-    cursor: none;
-}
 
 .cursor-dot {
     position: fixed;
@@ -43,13 +39,6 @@ body {
     transition: width 0.2s ease, height 0.2s ease;
 }
 
-/* Hover Effect */
-button:hover ~ .cursor-outline {
-    width: 50px;
-    height: 50px;
-}
-
-
 /* =========================
    GLASS FRAME
 ========================= */
@@ -65,7 +54,6 @@ button:hover ~ .cursor-outline {
     margin: auto;
 }
 
-
 /* =========================
    PROFILE IMAGE
 ========================= */
@@ -74,7 +62,6 @@ button:hover ~ .cursor-outline {
     border-radius: 50%;
     margin-top: 15px;
 }
-
 
 /* =========================
    BUTTONS
@@ -86,14 +73,14 @@ button {
     color: white;
     border: 1px solid #444;
     border-radius: 6px;
-    cursor: pointer;
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
 button:hover {
     background-color: #333;
+    transform: scale(1.05);
 }
-
 
 /* =========================
    INFO BOX
@@ -106,8 +93,13 @@ button:hover {
     width: 90%;
     border-radius: 8px;
     text-align: left;
+    animation: fadeIn 0.4s ease;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
 /* =========================
    STAR EFFECT
@@ -124,20 +116,4 @@ button:hover {
 @keyframes fadeOut {
     0% { opacity: 1; transform: scale(1); }
     100% { opacity: 0; transform: scale(2); }
-}
-
-
-/* =========================
-   CURSOR GLOW EFFECT
-========================= */
-.cursor-glow {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: white;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 15px white, 0 0 30px white;
-    z-index: 9999;
 }
